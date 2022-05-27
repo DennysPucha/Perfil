@@ -88,75 +88,20 @@ header a:hover{
     background-position: center center;
 }
 
-#Introduccion .container{
+#Estudios .container{
     text-align: justify;
     padding: 100px 12px;
 }
-#DiagramaImg{
-    padding: 15px 10px;
-}
-
-#DiagramaUML .container{
+#Habilidades{
     text-align: justify;
     padding: 100px 12px;
 }
-#ConclusionesdelTrabajo .container{
+#Experiencia .container{
     text-align: justify;
     padding: 100px 10px;
 }
-#loscreadores{
-    background-color: rgb(30,30,30);
-    color: white;
-    text-align: center;
-}
 
-#loscreadores .container{
-    padding: 150px 12px;
-}
 
-#loscreadores h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#loscreadores p{
-    display: none;
-}
-
-#loscreadores .carta{
-    background-position: center;
-    background-size: cover;
-    padding: 25px 0px;
-    margin: 50px;
-    border-radius: 15px;
-}
-
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("img/azul.png")
-}
-
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("img/azul.png")
-}
-#Links .container{
-    text-align: center;
-    padding: 25px 10px;
-}
-
-#Links li{
-    margin: 16px 0px;
-    font-weight: bold
-}
 footer{
     background-color: #062042;
     color: white;
@@ -167,10 +112,6 @@ footer{
 
 footer h3{
     margin: 0;
-}
-.container #logoimg{
-    height: 70px;
-    width: 90px;
 }
 @media (min-width:600px){
     header{
@@ -185,166 +126,87 @@ footer h3{
     header nav{
         flex-direction: row;
         padding-bottom: 0;
-        padding-right: 10px;
+        padding-right: 0px;
     }
-    #Introduccion .container{
+    #Estudios .container{
         display: flex;
     }
 
-    #Introduccion .img-container{
-        background-image: url("img/OperacionesBancarias.jpg");
+    #Estudios .img-container{
+        background-image: url("img/estudios.jpg");
         background-size: cover;
         background-position: center center;
         height: 502px;
         width: 343px;
     }
-    #Introduccion .text{
+    #Estudios .text{
         width: 80%;
         text-align: justify;
         padding-left: 50px;
         padding-right: 0px;
     }
-    #DiagramaImg1 .serieImagen1{
-        background-image: url("img/diagrama/P1.png");
+    #Habilidades .contenedorImg{
+        display: flex;
+    }
+    #Habilidades .Img1{
+        background-image: url("img/H1.jpg");
         background-size: cover;
         background-position: center center;
         height: 400px;
-        width: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
     }
-    #DiagramaImg1 {
-        padding: 25px 25px;
-        display: flex;
+    #Habilidades .Img2{
+        background-image: url("img/H2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
     }
-    #DiagramaImg1 .text1{
-        width: 60%;
-        text-align: justify;
-        padding-left: 50px;
-        padding-right: 0px;
-     }
+    #Habilidades .Img3{
+        background-image: url("img/H3.jfif");
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
+    }
 
-     #DiagramaImg2 .serieImagen2{
-        background-image: url("img/diagrama/P2.png");
-        background-size: cover;
-        background-position: center center;
-        height: 400px;
-        width: 400px;
-    }
-    #DiagramaImg2 {
-        padding: 25px 25px;
-        display: flex;
-    }
-    #DiagramaImg2 .text2{
-        width: 60%;
-        text-align: justify;
-        padding-left: 50px;
-        padding-right: 0px;
-     }
-
-    #DiagramaImg3 .serieImagen3{
-        background-image: url("img/diagrama/P3.png");
-        background-size: cover;
-        background-position: center center;
-        height: 400px;
-        width: 400px;
-    }
-    #DiagramaImg3 {
-        padding: 25px 25px;
-        display: flex;
-    }
-    #DiagramaImg3 .text3{
-        width: 60%;
-        text-align: justify;
-        padding-left: 50px;
-        padding-right: 0px;
-        padding-bottom: 70px;
-     }
-     .container #logoimg{
-        height: 70px;
-        width: 120px;
-    }
-    #ConclusionesdelTrabajo .container{
+    #Experiencia .container{
         display: flex;
         justify-content: space-evenly;
     }
 
-    #ConclusionesdelTrabajo .text{
+    #Experiencia .text{
         width: 100%;
         text-align: justify;
         padding-left: 0px;
     }
 
-    #ConclusionesdelTrabajo h2{
+    #Experiencia h2{
         margin-top: 0px;
     }
-
-    #ConclusionesdelTrabajo .img-container{
+    #Experiencia .contenedorImg{
+        display: flex;
+    }
+    #Experiencia .Img2{
+        background-image: url("img/E1.jfif");
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
+    }
+    #Experiencia .Img3{
+        background-image: url("img/E2.jpg");
         background-size: cover;
         background-position: center center;
-        height: 500px;
-        width: 400px; 
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
     }
-    #loscreadores .programas{
-        display: flex;
-        justify-content: center;
-    }
+    
 
-    #loscreadores p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #loscreadores h2{
-        font-size: 4em;
-    }
-
-    #loscreadores h3{
-        margin-top: 0;
-    }
-
-    #loscreadores .carta{
-        padding: 50px;
-        background-size: 100% 150px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-        background-color: rgba(50, 50, 50, 1);
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    }    
-
-    .carta:first-child{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("img/azul.png")
-
-    }
-
-    .carta:nth-child(2){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("img/azul.png")
-    }
-    #Links{
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(100vw - 500px) 120px;
-    }
-
-    #Links .container{
-        text-align: initial;
-    }
-
-    #Links ul{
-        margin-left: 100px;
-    }
-    #Funcionalidades .lista {
-        font-size:1.7em;
-        padding-top: 50px;
-        padding-right: 50px;
-        padding-bottom: 70px;
-    }
 }
