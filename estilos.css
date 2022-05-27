@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+p{font-size: 1.50em;}
+
+.botonInicial{
+    font-size: 2em;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #77C9D4;
+    margin: 5px;
+}
+.botonInicial:hover{
+    background-color: #0ad5f0;
+}
+
+
+.container{
+    max-width: 1400;
+    margin: auto;
+}
+
+header{
+    background-color:white;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #062042;
+    font-size: 1.45em;
+}
+
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color:#07236e;
+}
+
+#Panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("img/panel-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Estudios .container{
+    text-align: justify;
+    padding: 100px 12px;
+}
+#Habilidades{
+    text-align: justify;
+    padding: 100px 12px;
+}
+#Experiencia .container{
+    text-align: justify;
+    padding: 100px 10px;
+}
+
+
+footer{
+    background-color: #062042;
+    color: white;
+    font-size: 0.5em;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+footer h3{
+    margin: 0;
+}
+@media (min-width:600px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 0px;
+    }
+    #Estudios .container{
+        display: flex;
+    }
+
+    #Estudios .img-container{
+        background-image: url("img/estudios.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 502px;
+        width: 343px;
+    }
+    #Estudios .text{
+        width: 80%;
+        text-align: justify;
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    #Habilidades .contenedorImg{
+        display: flex;
+    }
+    #Habilidades .Img1{
+        background-image: url("img/H1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
+    }
+    #Habilidades .Img2{
+        background-image: url("img/H2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
+    }
+    #Habilidades .Img3{
+        background-image: url("img/H3.jfif");
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
+    }
+
+    #Experiencia .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Experiencia .text{
+        width: 100%;
+        text-align: justify;
+        padding-left: 0px;
+    }
+
+    #Experiencia h2{
+        margin-top: 0px;
+    }
+    #Experiencia .contenedorImg{
+        display: flex;
+    }
+    #Experiencia .Img2{
+        background-image: url("img/E1.jfif");
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
+    }
+    #Experiencia .Img3{
+        background-image: url("img/E2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+        margin: 55px;
+    }
+    
+
+}
